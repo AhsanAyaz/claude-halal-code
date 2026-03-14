@@ -14,11 +14,11 @@
 
 ### Ayah Data
 
-- [ ] **DATA-01**: Plugin ships a bundled `data/fallback.json` containing ~50 curated ayahs tagged by theme (ilm, tawakkul, ihsan, sabr, shukr) and time-of-day slot (fajr, duha, asr, maghrib, isha)
-- [ ] **DATA-02**: Each bundled ayah includes: Arabic text, transliteration (romanized), Hilali-Khan English translation, surah name, surah number, ayah number
+- [x] **DATA-01**: Plugin ships a bundled `data/fallback.json` containing ~50 curated ayahs tagged by theme (ilm, tawakkul, ihsan, sabr, shukr) and time-of-day slot (fajr, duha, asr, maghrib, isha)
+- [x] **DATA-02**: Each bundled ayah includes: Arabic text, transliteration (romanized), Hilali-Khan English translation, surah name, surah number, ayah number
 - [ ] **DATA-03**: Plugin fetches ayahs from alquran.cloud API using `en.hilali` edition for English and `en.transliteration` (or equivalent) for transliteration
 - [ ] **DATA-04**: API response is cached locally (e.g. `~/.claude/cache/claude-code-quran/`) with stale-while-revalidate strategy
-- [ ] **DATA-05**: If API is unavailable or cache is empty, plugin falls back to bundled `fallback.json` silently (no error shown to user)
+- [x] **DATA-05**: If API is unavailable or cache is empty, plugin falls back to bundled `fallback.json` silently (no error shown to user)
 
 ### Display Rendering
 
@@ -89,9 +89,9 @@
 | INFRA-02 | Phase 1 | Complete |
 | INFRA-03 | Phase 1 | Complete |
 | INFRA-04 | Phase 1 | Complete |
-| DATA-01 | Phase 1 | Pending |
-| DATA-02 | Phase 1 | Pending |
-| DATA-05 | Phase 1 | Pending |
+| DATA-01 | Phase 1 | Complete |
+| DATA-02 | Phase 1 | Complete |
+| DATA-05 | Phase 1 | Complete |
 | DISP-04 | Phase 1 | Pending |
 | HOOK-01 | Phase 1 | Pending |
 | DISP-01 | Phase 2 | Pending |
