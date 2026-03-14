@@ -46,7 +46,13 @@ Plans:
   3. Setting `NO_COLOR=1` produces the same content with no ANSI color codes; narrow terminals (under 60 cols) degrade to text-only without the mosque art frame
   4. During rapid tool sequences, ayahs appear at most once every 60 seconds via PreToolUse — no ayah flood across back-to-back tool calls
   5. Session-start ayahs and session-boundary events (RATE-03) are never suppressed by the cooldown — only PreToolUse is rate-limited
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — render-panel.js library: Unicode box renderer, mosque art variants, chalk colors, NO_COLOR support (TDD)
+- [ ] 02-02-PLAN.md — select-ayah.js library: tool-type + time-of-day theme resolution, session no-repeat tracking (TDD)
+- [ ] 02-03-PLAN.md — pre-tool-use.js hook + hooks.json registration: rate limiting, stdin reading, full pipeline wiring
+- [ ] 02-04-PLAN.md — session-start.js upgrade to full panel + human verification of live rendering
 
 ### Phase 3: Full Lifecycle
 **Goal**: The plugin covers the complete session arc — PreCompact displays an ayah during context compaction, and Stop displays a closing ayah at session end
@@ -74,6 +80,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation and Hook Scaffold | 3/3 | Complete   | 2026-03-14 |
-| 2. Display Rendering and Theming | 0/TBD | Not started | - |
+| 2. Display Rendering and Theming | 0/4 | Not started | - |
 | 3. Full Lifecycle | 0/TBD | Not started | - |
 | 4. API Integration and Cache | 0/TBD | Not started | - |
