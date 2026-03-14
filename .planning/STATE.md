@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Phase 1 context gathered
-last_updated: "2026-03-14T22:42:34.860Z"
+stopped_at: Completed 01-01-PLAN.md
+last_updated: "2026-03-14T23:01:09.057Z"
 last_activity: 2026-03-14 — Roadmap created, ready for Phase 1 planning
 progress:
   total_phases: 4
   completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
+  total_plans: 3
+  completed_plans: 1
   percent: 0
 ---
 
@@ -50,6 +50,7 @@ Progress: [░░░░░░░░░░] 0%
 - Trend: -
 
 *Updated after each plan completion*
+| Phase 01-foundation-and-hook-scaffold P01 | 2 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -61,6 +62,7 @@ Recent decisions affecting current work:
 - [Phase 1]: Hook output mechanism is UNRESOLVED — must empirically test `/dev/tty`, `systemMessage`, and `process.stderr` in a live Claude Code session before writing rendering code. This is the single blocking question for the entire display pipeline.
 - [Phase 1]: Use CommonJS (`require()`), not ESM — chalk@4.1.2 (last CJS version), custom Unicode box renderer (avoid boxen ESM issue), `string-width@4` if needed.
 - [All phases]: Use `${CLAUDE_PLUGIN_ROOT}` in hooks.json and `__dirname` in Node scripts — never hardcoded paths, never `process.cwd()`.
+- [Phase 01-foundation-and-hook-scaffold]: Used ${CLAUDE_PLUGIN_ROOT} in hook command even though empty during SessionStart (GitHub #27145); script resolves own root via three-strategy fallback
 
 ### Pending Todos
 
@@ -72,6 +74,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-14T22:42:34.858Z
-Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-foundation-and-hook-scaffold/01-CONTEXT.md
+Last session: 2026-03-14T23:01:09.055Z
+Stopped at: Completed 01-01-PLAN.md
+Resume file: None

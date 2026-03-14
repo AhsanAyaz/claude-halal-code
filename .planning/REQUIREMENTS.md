@@ -7,10 +7,10 @@
 
 ### Plugin Infrastructure
 
-- [ ] **INFRA-01**: Plugin has a valid `.claude-plugin/plugin.json` manifest with name `claude-code-quran`
-- [ ] **INFRA-02**: Plugin uses `$CLAUDE_PLUGIN_ROOT` for all intra-plugin path references (no hardcoded paths)
-- [ ] **INFRA-03**: Hook scripts are invoked as `node ${CLAUDE_PLUGIN_ROOT}/scripts/...` (not shell scripts) to avoid shell profile interference
-- [ ] **INFRA-04**: All display hooks use `async: true` so Claude's tool execution is never blocked
+- [x] **INFRA-01**: Plugin has a valid `.claude-plugin/plugin.json` manifest with name `claude-code-quran`
+- [x] **INFRA-02**: Plugin uses `$CLAUDE_PLUGIN_ROOT` for all intra-plugin path references (no hardcoded paths)
+- [x] **INFRA-03**: Hook scripts are invoked as `node ${CLAUDE_PLUGIN_ROOT}/scripts/...` (not shell scripts) to avoid shell profile interference
+- [x] **INFRA-04**: All display hooks use `async: true` so Claude's tool execution is never blocked
 
 ### Ayah Data
 
@@ -85,10 +85,10 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INFRA-01 | Phase 1 | Pending |
-| INFRA-02 | Phase 1 | Pending |
-| INFRA-03 | Phase 1 | Pending |
-| INFRA-04 | Phase 1 | Pending |
+| INFRA-01 | Phase 1 | Complete |
+| INFRA-02 | Phase 1 | Complete |
+| INFRA-03 | Phase 1 | Complete |
+| INFRA-04 | Phase 1 | Complete |
 | DATA-01 | Phase 1 | Pending |
 | DATA-02 | Phase 1 | Pending |
 | DATA-05 | Phase 1 | Pending |
