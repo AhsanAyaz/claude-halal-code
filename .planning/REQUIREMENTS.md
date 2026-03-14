@@ -25,7 +25,7 @@
 - [ ] **DISP-01**: Display is rendered as a framed box using ANSI escape codes and Unicode box-drawing characters (no external dependencies like boxen)
 - [ ] **DISP-02**: Box contains: ASCII mosque/dome art at top, Arabic ayah text, transliteration line, Hilali-Khan English translation, surah name + ayah reference at bottom
 - [ ] **DISP-03**: ASCII mosque art is at least 2 variants (small ~40 cols, standard ~60 cols) and selected based on terminal width (`process.stdout.columns`)
-- [ ] **DISP-04**: Display output goes to stderr (shown immediately in terminal regardless of verbose mode)
+- [x] **DISP-04**: Display output goes to stderr (shown immediately in terminal regardless of verbose mode)
 - [ ] **DISP-05**: Display respects `NO_COLOR` environment variable — renders plain text without ANSI codes when set
 - [ ] **DISP-06**: Arabic text is displayed as-is (plugin does not attempt RTL correction — English translation is the primary readable surface)
 
@@ -45,7 +45,7 @@
 
 ### Lifecycle Hooks
 
-- [ ] **HOOK-01**: SessionStart hook displays an opening ayah when a new Claude Code session begins (and triggers background cache refresh as a detached child process)
+- [x] **HOOK-01**: SessionStart hook displays an opening ayah when a new Claude Code session begins (and triggers background cache refresh as a detached child process)
 - [ ] **HOOK-02**: PreToolUse hook displays an ayah when Claude is about to use a tool (rate-limited per RATE-01)
 - [ ] **HOOK-03**: PreCompact hook displays an ayah during context compaction
 - [ ] **HOOK-04**: Stop hook displays a closing ayah when the session ends (Stop hook is used instead of SessionEnd to avoid 1.5s timeout)
@@ -92,8 +92,8 @@
 | DATA-01 | Phase 1 | Complete |
 | DATA-02 | Phase 1 | Complete |
 | DATA-05 | Phase 1 | Complete |
-| DISP-04 | Phase 1 | Pending |
-| HOOK-01 | Phase 1 | Pending |
+| DISP-04 | Phase 1 | Complete |
+| HOOK-01 | Phase 1 | Complete |
 | DISP-01 | Phase 2 | Pending |
 | DISP-02 | Phase 2 | Pending |
 | DISP-03 | Phase 2 | Pending |
