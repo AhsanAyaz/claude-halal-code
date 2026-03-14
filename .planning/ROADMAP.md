@@ -29,7 +29,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. All hook scripts use `${CLAUDE_PLUGIN_ROOT}` for paths and `node` as the explicit runtime — no hardcoded paths, no shell shebang
   4. Bundled fallback.json contains at least 50 ayahs, each with Arabic, transliteration, en.hilali translation, surah name, surah number, ayah number, and theme tags
   5. If the bundled fallback is the only data source, the plugin runs silently — no error messages or stack traces visible to the user
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Plugin manifest (.claude-plugin/plugin.json) and hook registration (hooks/hooks.json)
+- [ ] 01-02-PLAN.md — Bundled ayah dataset: 50 curated ayahs tagged by theme and time of day (data/fallback.json)
+- [ ] 01-03-PLAN.md — Hook scripts: output test, ayah loader library, and production SessionStart hook
 
 ### Phase 2: Display Rendering and Theming
 **Goal**: Users see a beautiful, thematic framed panel display with ASCII mosque art, color, and ayah selection driven by tool type and time of day
@@ -68,7 +73,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation and Hook Scaffold | 0/TBD | Not started | - |
+| 1. Foundation and Hook Scaffold | 0/3 | Not started | - |
 | 2. Display Rendering and Theming | 0/TBD | Not started | - |
 | 3. Full Lifecycle | 0/TBD | Not started | - |
 | 4. API Integration and Cache | 0/TBD | Not started | - |
