@@ -6,8 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/session-start.js",
-            "async": true
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/session-start.js"
           }
         ]
       }
