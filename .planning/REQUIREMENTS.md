@@ -92,10 +92,11 @@
 | DATA-01 | Phase 1 | Pending |
 | DATA-02 | Phase 1 | Pending |
 | DATA-05 | Phase 1 | Pending |
+| DISP-04 | Phase 1 | Pending |
+| HOOK-01 | Phase 1 | Pending |
 | DISP-01 | Phase 2 | Pending |
 | DISP-02 | Phase 2 | Pending |
 | DISP-03 | Phase 2 | Pending |
-| DISP-04 | Phase 1 | Pending |
 | DISP-05 | Phase 2 | Pending |
 | DISP-06 | Phase 2 | Pending |
 | THEME-01 | Phase 2 | Pending |
@@ -106,18 +107,17 @@
 | RATE-02 | Phase 2 | Pending |
 | RATE-03 | Phase 2 | Pending |
 | RATE-04 | Phase 2 | Pending |
-| HOOK-01 | Phase 1 | Pending |
 | HOOK-02 | Phase 2 | Pending |
 | HOOK-03 | Phase 3 | Pending |
 | HOOK-04 | Phase 3 | Pending |
-| DATA-03 | Phase 3 | Pending |
-| DATA-04 | Phase 3 | Pending |
+| DATA-03 | Phase 4 | Pending |
+| DATA-04 | Phase 4 | Pending |
 
 **Coverage:**
-- v1 requirements: 26 total
-- Mapped to phases: 26
+- v1 requirements: 27 total
+- Mapped to phases: 27
 - Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-03-14*
-*Last updated: 2026-03-14 after initial definition*
+*Last updated: 2026-03-14 after roadmap creation — DATA-03/DATA-04 moved to Phase 4 (API Integration), corrected total count to 27*
