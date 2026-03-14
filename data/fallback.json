@@ -1,0 +1,505 @@
+{
+  "version": "1.0",
+  "ayahs": [
+    {
+      "arabic": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ",
+      "transliteration": "Iqra bismi rabbika alladhee khalaq",
+      "translation": "Read! In the Name of your Lord, Who has created (all that exists).",
+      "surah_name": "Al-Alaq",
+      "surah_number": 96,
+      "ayah_number": 1,
+      "themes": ["ilm"],
+      "time_slots": ["fajr", "duha"]
+    },
+    {
+      "arabic": "وَعَلَّمَ آدَمَ الْأَسْمَاءَ كُلَّهَا",
+      "transliteration": "Wa 'allama Adama al-asma'a kullaha",
+      "translation": "And He taught Adam the names of all things.",
+      "surah_name": "Al-Baqarah",
+      "surah_number": 2,
+      "ayah_number": 31,
+      "themes": ["ilm"],
+      "time_slots": ["duha", "asr"]
+    },
+    {
+      "arabic": "عَلَّمَ الْإِنسَانَ مَا لَمْ يَعْلَمْ",
+      "transliteration": "Allama al-insana ma lam ya'lam",
+      "translation": "He has taught man that which he knew not.",
+      "surah_name": "Al-Alaq",
+      "surah_number": 96,
+      "ayah_number": 5,
+      "themes": ["ilm"],
+      "time_slots": ["fajr", "duha"]
+    },
+    {
+      "arabic": "وَقُل رَّبِّ زِدْنِي عِلْمًا",
+      "transliteration": "Wa qul rabbi zidni 'ilma",
+      "translation": "And say: My Lord! Increase me in knowledge.",
+      "surah_name": "Ta-Ha",
+      "surah_number": 20,
+      "ayah_number": 114,
+      "themes": ["ilm"],
+      "time_slots": ["fajr", "duha", "asr"]
+    },
+    {
+      "arabic": "هَلْ يَسْتَوِي الَّذِينَ يَعْلَمُونَ وَالَّذِينَ لَا يَعْلَمُونَ",
+      "transliteration": "Hal yastawee alladhina ya'lamuna walladhina la ya'lamun",
+      "translation": "Are those who know equal to those who know not?",
+      "surah_name": "Az-Zumar",
+      "surah_number": 39,
+      "ayah_number": 9,
+      "themes": ["ilm"],
+      "time_slots": ["duha", "asr"]
+    },
+    {
+      "arabic": "يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ",
+      "transliteration": "Yarfa'i Allahu alladhina amanu minkum walladhina utu al-'ilma darajat",
+      "translation": "Allah will exalt in degree those of you who believe and those who have been granted knowledge.",
+      "surah_name": "Al-Mujadila",
+      "surah_number": 58,
+      "ayah_number": 11,
+      "themes": ["ilm"],
+      "time_slots": ["fajr", "duha"]
+    },
+    {
+      "arabic": "وَمَا أُوتِيتُم مِّنَ الْعِلْمِ إِلَّا قَلِيلًا",
+      "transliteration": "Wa ma utitum mina al-'ilmi illa qalila",
+      "translation": "And of knowledge, you (mankind) have been given only a little.",
+      "surah_name": "Al-Isra",
+      "surah_number": 17,
+      "ayah_number": 85,
+      "themes": ["ilm"],
+      "time_slots": ["asr", "maghrib"]
+    },
+    {
+      "arabic": "إِنَّمَا يَخْشَى اللَّهَ مِنْ عِبَادِهِ الْعُلَمَاءُ",
+      "transliteration": "Innama yakhsha Allaha min 'ibadihi al-'ulama'",
+      "translation": "It is only those who have knowledge among His slaves that fear Allah.",
+      "surah_name": "Fatir",
+      "surah_number": 35,
+      "ayah_number": 28,
+      "themes": ["ilm"],
+      "time_slots": ["asr", "maghrib", "isha"]
+    },
+    {
+      "arabic": "أَفَلَا يَتَدَبَّرُونَ الْقُرْآنَ",
+      "transliteration": "Afala yatadabbaruna al-Qur'an",
+      "translation": "Will they not then ponder over the Quran?",
+      "surah_name": "An-Nisa",
+      "surah_number": 4,
+      "ayah_number": 82,
+      "themes": ["ilm"],
+      "time_slots": ["duha", "asr", "isha"]
+    },
+    {
+      "arabic": "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنفُسِهِمْ",
+      "transliteration": "Sanureehim ayatina fee al-afaqi wa fee anfusihim",
+      "translation": "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
+      "surah_name": "Fussilat",
+      "surah_number": 41,
+      "ayah_number": 53,
+      "themes": ["ilm"],
+      "time_slots": ["duha", "asr"]
+    },
+    {
+      "arabic": "وَعَلَى اللَّهِ فَتَوَكَّلُوا إِن كُنتُم مُّؤْمِنِينَ",
+      "transliteration": "Wa 'ala Allahi fatawakkalu in kuntum mu'minin",
+      "translation": "And put your trust in Allah if you are believers indeed.",
+      "surah_name": "Al-Ma'idah",
+      "surah_number": 5,
+      "ayah_number": 23,
+      "themes": ["tawakkul"],
+      "time_slots": ["fajr", "duha", "isha"]
+    },
+    {
+      "arabic": "وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ",
+      "transliteration": "Wa man yatawakkal 'ala Allahi fahuwa hasbuh",
+      "translation": "And whosoever puts his trust in Allah, then He will suffice him.",
+      "surah_name": "At-Talaq",
+      "surah_number": 65,
+      "ayah_number": 3,
+      "themes": ["tawakkul"],
+      "time_slots": ["isha", "fajr"]
+    },
+    {
+      "arabic": "فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى اللَّهِ",
+      "transliteration": "Fa-idha 'azamta fatawakkal 'ala Allah",
+      "translation": "Then when you have taken a decision, put your trust in Allah.",
+      "surah_name": "Al-Imran",
+      "surah_number": 3,
+      "ayah_number": 159,
+      "themes": ["tawakkul"],
+      "time_slots": ["fajr", "duha"]
+    },
+    {
+      "arabic": "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
+      "transliteration": "Inna Allaha ma'a as-sabireen",
+      "translation": "Truly, Allah is with the patient ones (As-Sabirun).",
+      "surah_name": "Al-Baqarah",
+      "surah_number": 2,
+      "ayah_number": 153,
+      "themes": ["tawakkul", "sabr"],
+      "time_slots": ["asr", "isha"]
+    },
+    {
+      "arabic": "حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ",
+      "transliteration": "Hasbuna Allahu wa ni'ma al-wakeel",
+      "translation": "Allah is Sufficient for us, and He is the Best Disposer of affairs.",
+      "surah_name": "Al-Imran",
+      "surah_number": 3,
+      "ayah_number": 173,
+      "themes": ["tawakkul"],
+      "time_slots": ["fajr", "isha"]
+    },
+    {
+      "arabic": "وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ",
+      "transliteration": "Wa ma tawfeeqi illa billah",
+      "translation": "And my success cannot come from anywhere except from Allah.",
+      "surah_name": "Hud",
+      "surah_number": 11,
+      "ayah_number": 88,
+      "themes": ["tawakkul"],
+      "time_slots": ["fajr", "duha", "isha"]
+    },
+    {
+      "arabic": "قُل لَّن يُصِيبَنَا إِلَّا مَا كَتَبَ اللَّهُ لَنَا",
+      "transliteration": "Qul lan yusibana illa ma kataba Allahu lana",
+      "translation": "Say: Nothing shall ever happen to us except what Allah has ordained for us.",
+      "surah_name": "At-Tawbah",
+      "surah_number": 9,
+      "ayah_number": 51,
+      "themes": ["tawakkul"],
+      "time_slots": ["isha", "fajr"]
+    },
+    {
+      "arabic": "وَإِن تَعُدُّوا نِعْمَتَ اللَّهِ لَا تُحْصُوهَا",
+      "transliteration": "Wa in ta'uddu ni'mata Allahi la tuhsuha",
+      "translation": "And if you count the blessings of Allah, never will you be able to count them.",
+      "surah_name": "Ibrahim",
+      "surah_number": 14,
+      "ayah_number": 34,
+      "themes": ["tawakkul", "shukr"],
+      "time_slots": ["maghrib", "isha"]
+    },
+    {
+      "arabic": "أَلَيْسَ اللَّهُ بِكَافٍ عَبْدَهُ",
+      "transliteration": "Alaysa Allahu bikafin 'abdah",
+      "translation": "Is not Allah Sufficient for His slave?",
+      "surah_name": "Az-Zumar",
+      "surah_number": 39,
+      "ayah_number": 36,
+      "themes": ["tawakkul"],
+      "time_slots": ["isha", "fajr"]
+    },
+    {
+      "arabic": "وَاسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ",
+      "transliteration": "Wasta'eenu bis-sabri was-salah",
+      "translation": "And seek help in patience and As-Salat (the prayer).",
+      "surah_name": "Al-Baqarah",
+      "surah_number": 2,
+      "ayah_number": 45,
+      "themes": ["tawakkul", "sabr"],
+      "time_slots": ["fajr", "asr"]
+    },
+    {
+      "arabic": "إِنَّ اللَّهَ يُحِبُّ الْمُحْسِنِينَ",
+      "transliteration": "Inna Allaha yuhibbu al-muhsineen",
+      "translation": "Truly, Allah loves the Muhsinun (good-doers).",
+      "surah_name": "Al-Baqarah",
+      "surah_number": 2,
+      "ayah_number": 195,
+      "themes": ["ihsan"],
+      "time_slots": ["duha", "asr"]
+    },
+    {
+      "arabic": "الَّذِي أَحْسَنَ كُلَّ شَيْءٍ خَلَقَهُ",
+      "transliteration": "Alladhee ahsana kulla shay'in khalaqah",
+      "translation": "Who made everything He has created good.",
+      "surah_name": "As-Sajdah",
+      "surah_number": 32,
+      "ayah_number": 7,
+      "themes": ["ihsan"],
+      "time_slots": ["fajr", "duha"]
+    },
+    {
+      "arabic": "وَأَحْسِنُوا إِنَّ اللَّهَ يُحِبُّ الْمُحْسِنِينَ",
+      "transliteration": "Wa ahsinu inna Allaha yuhibbu al-muhsineen",
+      "translation": "And do good. Truly, Allah loves the good-doers.",
+      "surah_name": "Al-Baqarah",
+      "surah_number": 2,
+      "ayah_number": 195,
+      "themes": ["ihsan"],
+      "time_slots": ["duha", "asr", "maghrib"]
+    },
+    {
+      "arabic": "هَلْ جَزَاءُ الْإِحْسَانِ إِلَّا الْإِحْسَانُ",
+      "transliteration": "Hal jaza'u al-ihsani illa al-ihsan",
+      "translation": "Is there any reward for good other than good?",
+      "surah_name": "Ar-Rahman",
+      "surah_number": 55,
+      "ayah_number": 60,
+      "themes": ["ihsan"],
+      "time_slots": ["maghrib", "isha"]
+    },
+    {
+      "arabic": "وَمَنْ أَحْسَنُ دِينًا مِّمَّنْ أَسْلَمَ وَجْهَهُ لِلَّهِ وَهُوَ مُحْسِنٌ",
+      "transliteration": "Wa man ahsanu deenan mimman aslama wajhahu lillahi wa huwa muhsin",
+      "translation": "And who is better in religion than one who submits himself to Allah while being a doer of good.",
+      "surah_name": "An-Nisa",
+      "surah_number": 4,
+      "ayah_number": 125,
+      "themes": ["ihsan"],
+      "time_slots": ["fajr", "duha"]
+    },
+    {
+      "arabic": "إِنَّ اللَّهَ لَا يُضِيعُ أَجْرَ الْمُحْسِنِينَ",
+      "transliteration": "Inna Allaha la yudi'u ajra al-muhsineen",
+      "translation": "Surely, Allah does not waste the reward of the doers of good.",
+      "surah_name": "Hud",
+      "surah_number": 11,
+      "ayah_number": 115,
+      "themes": ["ihsan"],
+      "time_slots": ["asr", "maghrib"]
+    },
+    {
+      "arabic": "وَقُولُوا لِلنَّاسِ حُسْنًا",
+      "transliteration": "Wa qulu lin-nasi husna",
+      "translation": "And speak good to people.",
+      "surah_name": "Al-Baqarah",
+      "surah_number": 2,
+      "ayah_number": 83,
+      "themes": ["ihsan"],
+      "time_slots": ["duha", "asr"]
+    },
+    {
+      "arabic": "ادْفَعْ بِالَّتِي هِيَ أَحْسَنُ",
+      "transliteration": "Idfa' billati hiya ahsan",
+      "translation": "Repel (evil) with that which is better.",
+      "surah_name": "Al-Mu'minun",
+      "surah_number": 23,
+      "ayah_number": 96,
+      "themes": ["ihsan"],
+      "time_slots": ["asr", "maghrib"]
+    },
+    {
+      "arabic": "وَمَا أَنفَقْتُم مِّن شَيْءٍ فَهُوَ يُخْلِفُهُ وَهُوَ خَيْرُ الرَّازِقِينَ",
+      "transliteration": "Wa ma anfaqtum min shay'in fahuwa yukhlifuhu wa huwa khayru ar-raziqeen",
+      "translation": "And whatsoever you spend of anything (in Allah's cause), He will replace it. And He is the Best of providers.",
+      "surah_name": "Saba",
+      "surah_number": 34,
+      "ayah_number": 39,
+      "themes": ["ihsan", "tawakkul"],
+      "time_slots": ["duha", "maghrib"]
+    },
+    {
+      "arabic": "وَاللَّهُ يُحِبُّ الْمُطَّهِّرِينَ",
+      "transliteration": "Wallahu yuhibbu al-muttahhireen",
+      "translation": "And Allah loves those who make themselves clean and pure.",
+      "surah_name": "At-Tawbah",
+      "surah_number": 9,
+      "ayah_number": 108,
+      "themes": ["ihsan"],
+      "time_slots": ["fajr", "duha"]
+    },
+    {
+      "arabic": "وَاصْبِرْ وَمَا صَبْرُكَ إِلَّا بِاللَّهِ",
+      "transliteration": "Wasbir wa ma sabruka illa billah",
+      "translation": "And be patient — your patience is not but through Allah.",
+      "surah_name": "An-Nahl",
+      "surah_number": 16,
+      "ayah_number": 127,
+      "themes": ["sabr"],
+      "time_slots": ["asr", "isha"]
+    },
+    {
+      "arabic": "إِنَّمَا يُوَفَّى الصَّابِرُونَ أَجْرَهُم بِغَيْرِ حِسَابٍ",
+      "transliteration": "Innama yuwaffa as-sabiruna ajrahum bighayri hisab",
+      "translation": "Only those who are patient shall receive their reward in full, without reckoning.",
+      "surah_name": "Az-Zumar",
+      "surah_number": 39,
+      "ayah_number": 10,
+      "themes": ["sabr"],
+      "time_slots": ["asr", "maghrib", "isha"]
+    },
+    {
+      "arabic": "وَلَنَبْلُوَنَّكُم بِشَيْءٍ مِّنَ الْخَوْفِ وَالْجُوعِ",
+      "transliteration": "Wa lanabluwan nakum bishay'in mina al-khawfi wal-ju'",
+      "translation": "And certainly, We shall test you with something of fear, hunger, loss of wealth, lives and fruits.",
+      "surah_name": "Al-Baqarah",
+      "surah_number": 2,
+      "ayah_number": 155,
+      "themes": ["sabr"],
+      "time_slots": ["asr", "isha"]
+    },
+    {
+      "arabic": "إِنَّ مَعَ الْعُسْرِ يُسْرًا",
+      "transliteration": "Inna ma'a al-'usri yusra",
+      "translation": "Verily, with the hardship, there is relief.",
+      "surah_name": "Ash-Sharh",
+      "surah_number": 94,
+      "ayah_number": 6,
+      "themes": ["sabr"],
+      "time_slots": ["asr", "isha", "fajr"]
+    },
+    {
+      "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا اسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ",
+      "transliteration": "Ya ayyuha alladhina amanu ista'inu bis-sabri was-salah",
+      "translation": "O you who believe! Seek help in patience and As-Salat (the prayer).",
+      "surah_name": "Al-Baqarah",
+      "surah_number": 2,
+      "ayah_number": 153,
+      "themes": ["sabr"],
+      "time_slots": ["fajr", "asr"]
+    },
+    {
+      "arabic": "وَاصْبِرُوا إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
+      "transliteration": "Wasbiru inna Allaha ma'a as-sabireen",
+      "translation": "And be patient. Surely, Allah is with those who are patient.",
+      "surah_name": "Al-Anfal",
+      "surah_number": 8,
+      "ayah_number": 46,
+      "themes": ["sabr"],
+      "time_slots": ["asr", "isha"]
+    },
+    {
+      "arabic": "وَلَمَن صَبَرَ وَغَفَرَ إِنَّ ذَٰلِكَ لَمِنْ عَزْمِ الْأُمُورِ",
+      "transliteration": "Wa laman sabara wa ghafara inna dhalika lamin 'azmi al-umur",
+      "translation": "And verily, whosoever shows patience and forgives — that would truly be from the things recommended by Allah.",
+      "surah_name": "Ash-Shura",
+      "surah_number": 42,
+      "ayah_number": 43,
+      "themes": ["sabr"],
+      "time_slots": ["asr", "maghrib", "isha"]
+    },
+    {
+      "arabic": "وَبَشِّرِ الصَّابِرِينَ",
+      "transliteration": "Wa bashshiri as-sabireen",
+      "translation": "And give glad tidings to the patient ones (As-Sabirun).",
+      "surah_name": "Al-Baqarah",
+      "surah_number": 2,
+      "ayah_number": 155,
+      "themes": ["sabr"],
+      "time_slots": ["maghrib", "isha"]
+    },
+    {
+      "arabic": "فَاصْبِرْ صَبْرًا جَمِيلًا",
+      "transliteration": "Fasbir sabran jameela",
+      "translation": "So be patient, with a good patience.",
+      "surah_name": "Al-Ma'arij",
+      "surah_number": 70,
+      "ayah_number": 5,
+      "themes": ["sabr"],
+      "time_slots": ["asr", "isha"]
+    },
+    {
+      "arabic": "وَاللَّهُ الصَّبُورُ",
+      "transliteration": "Wallahu as-Sabur",
+      "translation": "And Allah is the Patient.",
+      "surah_name": "Al-Baqarah",
+      "surah_number": 2,
+      "ayah_number": 225,
+      "themes": ["sabr"],
+      "time_slots": ["isha"]
+    },
+    {
+      "arabic": "فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ",
+      "transliteration": "Fadhkuruni adhkurkum washkuru lee wa la takfurun",
+      "translation": "Therefore remember Me. I will remember you, and be grateful to Me and never be ungrateful to Me.",
+      "surah_name": "Al-Baqarah",
+      "surah_number": 2,
+      "ayah_number": 152,
+      "themes": ["shukr"],
+      "time_slots": ["fajr", "maghrib", "isha"]
+    },
+    {
+      "arabic": "لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ",
+      "transliteration": "La'in shakartum la'azeedannakum",
+      "translation": "If you are grateful, I will surely increase you (in favor).",
+      "surah_name": "Ibrahim",
+      "surah_number": 14,
+      "ayah_number": 7,
+      "themes": ["shukr"],
+      "time_slots": ["fajr", "maghrib"]
+    },
+    {
+      "arabic": "وَإِن تَعُدُّوا نِعْمَةَ اللَّهِ لَا تُحْصُوهَا",
+      "transliteration": "Wa in ta'uddu ni'mata Allahi la tuhsuha",
+      "translation": "And if you should count the favors of Allah, you could not enumerate them.",
+      "surah_name": "An-Nahl",
+      "surah_number": 16,
+      "ayah_number": 18,
+      "themes": ["shukr"],
+      "time_slots": ["maghrib", "isha"]
+    },
+    {
+      "arabic": "وَقَلِيلٌ مِّنْ عِبَادِيَ الشَّكُورُ",
+      "transliteration": "Wa qaleelun min 'ibadiya ash-shakur",
+      "translation": "And few of My slaves are grateful.",
+      "surah_name": "Saba",
+      "surah_number": 34,
+      "ayah_number": 13,
+      "themes": ["shukr"],
+      "time_slots": ["maghrib", "isha"]
+    },
+    {
+      "arabic": "وَاشْكُرُوا لِلَّهِ إِن كُنتُمْ إِيَّاهُ تَعْبُدُونَ",
+      "transliteration": "Washkuru lillahi in kuntum iyyahu ta'budun",
+      "translation": "And be grateful to Allah, if it is (indeed) He Whom you worship.",
+      "surah_name": "Al-Baqarah",
+      "surah_number": 2,
+      "ayah_number": 172,
+      "themes": ["shukr"],
+      "time_slots": ["maghrib", "isha"]
+    },
+    {
+      "arabic": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+      "transliteration": "Al-hamdu lillahi rabbi al-'alamin",
+      "translation": "All the praises and thanks be to Allah, the Lord of the 'Alamin (mankind, jinns and all that exists).",
+      "surah_name": "Al-Fatihah",
+      "surah_number": 1,
+      "ayah_number": 2,
+      "themes": ["shukr"],
+      "time_slots": ["fajr", "maghrib", "isha"]
+    },
+    {
+      "arabic": "رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ",
+      "transliteration": "Rabbi awzi'ni an ashkura ni'mataka allati an'amta 'alayya",
+      "translation": "My Lord! Inspire and bestow upon me the power and ability that I may be grateful for Your Favours which You have bestowed on me.",
+      "surah_name": "An-Naml",
+      "surah_number": 27,
+      "ayah_number": 19,
+      "themes": ["shukr"],
+      "time_slots": ["fajr", "duha", "maghrib"]
+    },
+    {
+      "arabic": "مَا يَفْعَلُ اللَّهُ بِعَذَابِكُمْ إِن شَكَرْتُمْ وَآمَنتُمْ",
+      "transliteration": "Ma yaf'alu Allahu bi'adhabikum in shakartum wa amantum",
+      "translation": "Why should Allah punish you if you have thanked (Him) and have believed in Him.",
+      "surah_name": "An-Nisa",
+      "surah_number": 4,
+      "ayah_number": 147,
+      "themes": ["shukr"],
+      "time_slots": ["fajr", "maghrib"]
+    },
+    {
+      "arabic": "وَاشْكُرْ لِي وَلِوَالِدَيْكَ",
+      "transliteration": "Washkur lee wa liwaliday",
+      "translation": "Give thanks to Me and to your parents.",
+      "surah_name": "Luqman",
+      "surah_number": 31,
+      "ayah_number": 14,
+      "themes": ["shukr"],
+      "time_slots": ["maghrib", "isha"]
+    },
+    {
+      "arabic": "سُبْحَانَ الَّذِي خَلَقَ الْأَزْوَاجَ كُلَّهَا",
+      "transliteration": "Subhana alladhee khalaqa al-azwaja kullaha",
+      "translation": "Glory be to Him Who has created all the pairs.",
+      "surah_name": "Ya-Sin",
+      "surah_number": 36,
+      "ayah_number": 36,
+      "themes": ["shukr"],
+      "time_slots": ["fajr", "maghrib"]
+    }
+  ]
+}
