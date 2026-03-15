@@ -10,10 +10,7 @@
   "plugins": [
     {
       "name": "claude-halal-code",
-      "source": {
-        "source": "github",
-        "repo": "AhsanAyaz/claude-halal-code"
-      },
+      "source": "./",
       "description": "Displays a Quranic ayah at the start of every Claude Code session",
       "version": "1.0.0",
       "author": {
