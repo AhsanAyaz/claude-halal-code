@@ -43,18 +43,38 @@ So it shows once, at the beginning, and gets out of the way.
 **Requirements:** Claude Code, Node.js
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/claude-halal-code
+git clone https://github.com/AhsanAyaz/claude-halal-code
 cd claude-halal-code
 npm install
 ```
 
-Then start Claude Code with the plugin:
+### Try it once
 
 ```bash
 claude --plugin-dir /path/to/claude-halal-code
 ```
 
-Or add it to your Claude Code settings to load automatically every session.
+`--plugin-dir` loads the plugin for the current session only. Good for testing.
+
+### Load it automatically on every session
+
+Add an alias to your shell config (`~/.zshrc` or `~/.bashrc`):
+
+```bash
+alias claude='claude --plugin-dir /path/to/claude-halal-code'
+```
+
+Then reload your shell:
+
+```bash
+source ~/.zshrc  # or ~/.bashrc
+```
+
+Now every `claude` invocation will include the plugin.
+
+> **Note:** Once Claude Code's plugin marketplace is publicly available, this plugin
+> will be installable with a single command. Until then, the alias approach is the
+> recommended way to make it permanent.
 
 ---
 
