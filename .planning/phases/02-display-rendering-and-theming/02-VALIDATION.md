@@ -20,7 +20,7 @@ created: 2026-03-15
 | **Framework** | node (inline assert scripts per task, no test runner) |
 | **Config file** | none — Wave 0 installs stub test files |
 | **Quick run command** | `node scripts/lib/render-panel.test.js` |
-| **Full suite command** | `node scripts/lib/render-panel.test.js && node scripts/lib/select-ayah.test.js && node scripts/pre-tool-use.js --dry-run` |
+| **Full suite command** | `node scripts/lib/render-panel.test.js && node scripts/lib/select-ayah.test.js && node scripts/pre-tool-use.test.js` |
 | **Estimated runtime** | ~5 seconds |
 
 ---
@@ -44,8 +44,8 @@ created: 2026-03-15
 | 2-01-04 | 01 | 1 | DISP-06 | unit | `node scripts/lib/render-panel.test.js --arabic` | ❌ W0 | ⬜ pending |
 | 2-02-01 | 02 | 1 | THEME-01, THEME-02, THEME-03 | unit | `node scripts/lib/select-ayah.test.js` | ❌ W0 | ⬜ pending |
 | 2-02-02 | 02 | 1 | THEME-04 | unit | `node scripts/lib/select-ayah.test.js --no-repeat` | ❌ W0 | ⬜ pending |
-| 2-03-01 | 03 | 2 | RATE-01, RATE-02 | unit | `node scripts/lib/rate-limiter.test.js` | ❌ W0 | ⬜ pending |
-| 2-03-02 | 03 | 2 | RATE-03, RATE-04 | unit | `node scripts/lib/rate-limiter.test.js --exempt` | ❌ W0 | ⬜ pending |
+| 2-03-01 | 03 | 2 | RATE-01, RATE-02 | unit | `node scripts/pre-tool-use.test.js` | ❌ W0 | ⬜ pending |
+| 2-03-02 | 03 | 2 | RATE-03 | unit | `node scripts/pre-tool-use.test.js --exempt` | ❌ W0 | ⬜ pending |
 | 2-04-01 | 04 | 2 | HOOK-02 | integration | `node -e "process.stdin.push(JSON.stringify({tool_name:'Read'})+'\n'); require('./scripts/pre-tool-use.js')"` | ❌ W0 | ⬜ pending |
 | 2-05-01 | 05 | 2 | DISP-01–03 | manual | See Manual Verifications | ✅ | ⬜ pending |
 | 2-05-02 | 05 | 2 | SessionStart upgrade | manual | See Manual Verifications | ✅ | ⬜ pending |
@@ -58,7 +58,7 @@ created: 2026-03-15
 
 - [ ] `scripts/lib/render-panel.test.js` — stubs for DISP-01 through DISP-06
 - [ ] `scripts/lib/select-ayah.test.js` — stubs for THEME-01 through THEME-04
-- [ ] `scripts/lib/rate-limiter.test.js` — stubs for RATE-01 through RATE-04
+- [ ] `scripts/pre-tool-use.test.js` — stubs for RATE-01 through RATE-03
 
 ---
 

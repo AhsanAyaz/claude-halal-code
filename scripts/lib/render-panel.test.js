@@ -1,6 +1,5 @@
 'use strict';
 const assert = require('assert');
-const path = require('path');
 
 // Sample ayah fixture
 const SAMPLE_AYAH = {
@@ -50,11 +49,12 @@ test('renderPanel() output contains U+2502 (box vertical)', () => {
   assert.ok(output.includes('\u2502'), 'output should contain │ (U+2502)');
 });
 
-// Test 4: output contains Arabic text (diacritics stripped for terminal compat) — DISP-02, DISP-06
-test('renderPanel() output contains ayah.arabic', () => {
+// Test 4: output does NOT contain Arabic text (removed for terminal compat) — DISP-06
+test('renderPanel() output does not contain raw Arabic text', () => {
   const output = renderPanel(SAMPLE_AYAH, { cols: 80 });
-  const stripped = SAMPLE_AYAH.arabic.replace(/[\u0610-\u061A\u064B-\u065F\u0670]/g, '');
-  assert.ok(output.includes(stripped), 'output should contain Arabic text (diacritics stripped)');
+  const strippedOutput = output.replace(/\x1b\[[0-9;]*m/g, '');
+  // Arabic is omitted; transliteration serves as the phonetic representation
+  assert.ok(!strippedOutput.includes(SAMPLE_AYAH.arabic), 'output should not contain Arabic script');
 });
 
 // Test 5: output contains ayah.transliteration as a substring — DISP-02
@@ -75,28 +75,22 @@ test('renderPanel() output contains ayah.surah_name', () => {
   assert.ok(output.includes(SAMPLE_AYAH.surah_name), 'output should contain surah name');
 });
 
-// Test 8: cols >= 60 → output contains mosque art — DISP-02, DISP-03
-// Check by comparing line count with narrow version (art adds lines)
-test('renderPanel() with cols=80 contains mosque art lines', () => {
-  const outputWide = renderPanel(SAMPLE_AYAH, { cols: 80 });
-  const outputNarrow = renderPanel(SAMPLE_AYAH, { cols: 50 });
-  const wideLineCount = outputWide.split('\n').length;
-  const narrowLineCount = outputNarrow.split('\n').length;
-  assert.ok(wideLineCount > narrowLineCount,
-    'wide output (' + wideLineCount + ' lines) should have more lines than narrow (' + narrowLineCount + ' lines) due to mosque art');
+// Test 8: long translation wraps — full text visible, nothing cut off — DISP-02
+test('renderPanel() long translation is fully visible (wraps, not truncated)', () => {
+  const longAyah = Object.assign({}, SAMPLE_AYAH, {
+    translation: 'My Lord! Inspire and bestow upon me the power and ability to be thankful for Your favours which You have bestowed upon me and upon my parents, and to do good deeds that please You'
+  });
+  const output = renderPanel(longAyah, { cols: 80 });
+  const strippedOutput = output.replace(/\x1b\[[0-9;]*m/g, '');
+  assert.ok(strippedOutput.includes('My Lord!'), 'output should contain start of long translation');
+  assert.ok(strippedOutput.includes('my parents'), 'output should contain end of long translation (not truncated)');
 });
 
-// Test 9: cols < 60 → mosque art is absent — DISP-03
-test('renderPanel() with cols=50 does NOT contain mosque art', () => {
-  const outputWide = renderPanel(SAMPLE_AYAH, { cols: 80 });
-  const outputNarrow = renderPanel(SAMPLE_AYAH, { cols: 50 });
-  // Strip ANSI to get raw content for comparison
-  const stripAnsi = s => s.replace(/\x1b\[[0-9;]*m/g, '');
-  const wideLines = stripAnsi(outputWide).split('\n');
-  const narrowLines = stripAnsi(outputNarrow).split('\n');
-  // The wide version should have more lines because it includes mosque art
-  assert.ok(wideLines.length > narrowLines.length,
-    'narrow output should have fewer lines (no mosque art)');
+// Test 9: cols < 40 → plain-text fallback (no box frame)
+test('renderPanel() with cols=35 falls back to plain-text style', () => {
+  const output = renderPanel(SAMPLE_AYAH, { cols: 35 });
+  assert.ok(!output.includes('\u250C'), 'narrow output should not contain box frame');
+  assert.ok(output.includes(SAMPLE_AYAH.transliteration), 'narrow output should still contain transliteration');
 });
 
 // Test 10: NO_COLOR=1 → output has no ANSI escape sequences — DISP-05
@@ -133,15 +127,13 @@ test('without NO_COLOR: output contains ANSI color codes', () => {
   assert.ok(hasAnsi, 'output without NO_COLOR should contain ANSI color codes');
 });
 
-// Test 12: Arabic text displayed with diacritics stripped for terminal compat — DISP-06
-test('Arabic text is included verbatim (DISP-06)', () => {
-  // Diacritics removed before display so combining marks don't break monospace box alignment
-  const arabicText = 'اقرأ باسم ربك';  // diacritic-free form of SAMPLE_AYAH.arabic
+// Test 12: output contains quran.com link for the ayah — DISP-02
+test('renderPanel() output contains quran.com link', () => {
   const output = renderPanel(SAMPLE_AYAH, { cols: 80 });
-  // Strip ANSI codes to get raw content
-  const stripped = output.replace(/\x1b\[[0-9;]*m/g, '');
-  assert.ok(stripped.includes(arabicText),
-    'output should include Arabic text with diacritics removed for terminal display');
+  const strippedAnsi = output.replace(/\x1b\[[0-9;]*m/g, '');
+  const expectedUrl = 'https://quran.com/' + SAMPLE_AYAH.surah_number + '/' + SAMPLE_AYAH.ayah_number;
+  assert.ok(strippedAnsi.includes(expectedUrl),
+    'output should include quran.com URL for the ayah');
 });
 
 // Summary
