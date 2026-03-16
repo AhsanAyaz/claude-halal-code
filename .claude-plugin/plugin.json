@@ -1,5 +1,5 @@
 {
-  "name": "claude-code-quran",
+  "name": "claude-halal-code",
   "version": "1.0.0",
   "description": "Displays Quranic ayahs during Claude Code sessions"
 }
