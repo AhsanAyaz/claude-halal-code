@@ -2,7 +2,7 @@
   <img src="crescent.svg" alt="Crescent Moon" width="100" height="100" />
 </p>
 
-<h1 align="center">claude-halal-code</h1>
+<h1 align="center">claude-code-quran</h1>
 
 <p align="center">
   <a href="https://api.counterapi.dev/v2/code-with-ahsan/claude-halal-code"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.counterapi.dev%2Fv2%2Fcode-with-ahsan%2Fclaude-halal-code&query=count&label=sessions%20tracked&color=green" alt="Sessions" /></a>
@@ -60,8 +60,8 @@ That's it. The plugin loads automatically on every session from then on.
 ### Try it manually (session only)
 
 ```bash
-git clone https://github.com/AhsanAyaz/claude-halal-code
-claude --plugin-dir ./claude-halal-code
+git clone https://github.com/AhsanAyaz/claude-code-quran
+claude --plugin-dir ./claude-code-quran
 ```
 
 `--plugin-dir` loads the plugin for the current session only. Useful for testing.
@@ -100,7 +100,7 @@ On session start, the plugin:
 ## Structure
 
 ```
-claude-halal-code/
+claude-code-quran/
 ├── .claude-plugin/
 │   └── plugin.json          # Plugin manifest
 ├── hooks/
