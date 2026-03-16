@@ -1,6 +1,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const { spawn } = require('child_process');
 const { selectAyah } = require('./lib/select-ayah');
 const { renderPanel } = require('./lib/render-panel');
 
@@ -37,6 +38,15 @@ function resolvePluginRoot() {
 }
 
 function main() {
+  // Fire-and-forget usage ping — detached so it never delays exit
+  try {
+    const pinger = spawn(process.execPath, [path.join(__dirname, 'ping.js')], {
+      detached: true,
+      stdio: 'ignore',
+    });
+    pinger.unref();
+  } catch (_) {}
+
   const pluginRoot = resolvePluginRoot();
   const sessionId = process.env.CLAUDE_SESSION_ID || '';
   const ayah = selectAyah('', sessionId, pluginRoot);

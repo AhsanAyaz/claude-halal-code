@@ -5,6 +5,10 @@
 <h1 align="center">claude-halal-code</h1>
 
 <p align="center">
+  <a href="https://api.counterapi.dev/v1/claude-halal-code/sessions"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.counterapi.dev%2Fv1%2Fclaude-halal-code%2Fsessions&query=count&label=sessions%20tracked&color=green" alt="Sessions" /></a>
+</p>
+
+<p align="center">
   A Claude Code plugin that displays a Quranic ayah at the start of every session.<br/>
   One verse. One intention. Before the work begins.
 </p>
