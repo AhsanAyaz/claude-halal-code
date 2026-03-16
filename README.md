@@ -52,7 +52,7 @@ No dependencies. The plugin uses zero external packages.
 
 ```
 /plugin marketplace add AhsanAyaz/cwa-cc-plugins
-/plugin install claude-halal-code@cwa-cc-plugins
+/plugin install claude-code-quran@cwa-cc-plugins
 ```
 
 That's it. The plugin loads automatically on every session from then on.
